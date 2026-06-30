@@ -1,3 +1,4 @@
+
 # KoinX — Tax Harvesting Dashboard
 
 A production-quality React implementation of the KoinX Frontend Internship assignment: a tax-harvesting dashboard that shows a user's pre- and post-harvesting capital gains, recalculated live as holdings are selected for sale.
@@ -68,10 +69,8 @@ npm run preview  # preview the production build locally
 
 ## Screenshots
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/221e4044-e8c3-4aa3-bb5e-3fb4aa747983" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/56bbd6ca-e108-4519-8010-bd6425022c04" />
-
+<img width="1898" height="873" alt="Screenshot (377)" src="https://github.com/user-attachments/assets/dd455059-d66b-4766-a874-22db9212c35b" />
+<img width="1894" height="862" alt="Screenshot (376)" src="https://github.com/user-attachments/assets/4ba512bc-db3f-4868-93cf-13f66fff3e27" />
 
 ## Deployment (Vercel)
 
