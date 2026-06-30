@@ -68,7 +68,11 @@ npm run preview  # preview the production build locally
 
 ## Screenshots
 
-_Add screenshots of the Dashboard (desktop, tablet, mobile) here once the app is running locally — `npm run dev` and capture the Pre/After Harvesting cards and the holdings table._
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/221e4044-e8c3-4aa3-bb5e-3fb4aa747983" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/56bbd6ca-e108-4519-8010-bd6425022c04" />
+
 
 ## Deployment (Vercel)
 
