@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-surface-muted text-ink font-sans;
+  }
+  *:focus-visible {
+    outline: 2px solid #5B5FEF;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Custom checkbox styling to match Figma rounded checkboxes */
+  .kx-checkbox {
+    @apply appearance-none w-[18px] h-[18px] rounded-[5px] border-2 border-[#C7CBD6]
+      bg-white cursor-pointer relative transition-all duration-150 ease-out
+      checked:bg-brand-500 checked:border-brand-500
+      hover:border-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-400
+      disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .kx-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .kx-checkbox:indeterminate {
+    @apply bg-brand-500 border-brand-500;
+  }
+  .kx-checkbox:indeterminate::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    width: 10px;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #D7DAE3;
+    border-radius: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .skeleton {
+    background: linear-gradient(90deg, #EEF0F3 25%, #F7F8FA 37%, #EEF0F3 63%);
+    background-size: 400px 100%;
+    @apply animate-shimmer;
+  }
+  .skeleton-dark {
+    background: linear-gradient(90deg, #1A1F30 25%, #232940 37%, #1A1F30 63%);
+    background-size: 400px 100%;
+    @apply animate-shimmer;
+  }
+}
